@@ -1,0 +1,68 @@
+.process{
+	background: #FAE24C;
+	width: 90%;
+	position: absolute;
+	top:2%;
+	bottom:2%;
+	left:4%;
+	right:4%;
+	.road{
+		width: 80%;
+		height:70%;
+		position: absolute;
+		left: 10%;
+		right:10%;
+		bottom:15%;
+		top:15%;
+	}
+	.step{
+		width:100%;
+		img{
+			width: 50%;
+			position: absolute;
+			z-index: 100;
+			&.phone{
+				right:-61%;
+				top:10%;
+				-webkit-animation:translate 1s linear forwards;
+			}
+			&.band{
+				right:-57%;
+				top:31%;
+				-webkit-animation:translate 1s linear 2s forwards;
+			}
+			&.interview{
+				left:-75%;
+				top:44%;
+				-webkit-animation:translate2 1s linear 3s forwards;
+			}
+			&.loan{
+				right:-68%;
+				top:59%;
+				-webkit-animation:translate 1s linear 4s forwards;
+			}
+			&.car{
+				left:-55%;
+				top:78%;
+				-webkit-animation:translate2 1s linear 5s forwards;
+			}
+
+			@-webkit-keyframes translate{
+				0%{
+				    transform: translate(0, 0); 
+				}
+				100%{
+					transform: translate(-136%, 0); 
+				}
+			}
+			@-webkit-keyframes translate2{
+				0%{
+				    transform: translate(0, 0); 
+				}
+				100%{
+					transform: translate(169%, 0); 
+				}
+			}
+		}
+	}
+}

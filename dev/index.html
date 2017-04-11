@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="lotourApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>申请0首付购车</title>
+	<link rel="stylesheet" href="./public/css/reset.css">
+	<link rel="stylesheet" href="./public/css/style.css">
+	<link rel="stylesheet" href="./public/css/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./lib/swiper/css/swiper.css">
+	<link rel="stylesheet" href="../lib/iosselect-master/merge/iosSelect.css">
+</head>
+	
+<body>
+	<div class="wrap">
+	 	<div class="swiper-container">
+	       	<div class="swiper-wrapper banner">
+	            <div class="swiper-slide"><img src="./public/images/banner.png" alt=""></div>
+	            <div class="swiper-slide"><img src="./public/images/banner.png" alt=""></div>
+	            <div class="swiper-slide"><img src="./public/images/banner.png" alt=""></div>
+	            <div class="swiper-slide"><img src="./public/images/banner.png" alt=""></div>
+	        </div>
+    	</div>
+		
+		<nav class="nav">
+			<a href="controllers/condition.html">
+				<img src="./public/images/nav_r1_c1.jpg" alt="">
+				<span>申请条件</span>
+			</a>
+			<a href="controllers/data.html">
+				<img src="./public/images/nav_r1_c3.jpg" alt="">
+				<span>贷款材料</span>
+			</a>
+			<a href="controllers/process.html">
+				<img src="./public/images/nav_r1_c5.jpg" alt="">
+				<span>贷款流程</span>
+			</a>
+			<a href="controllers/calculator.html">
+				<img src="./public/images/nav_r1_c7.jpg" alt="">
+				<span>分期计算器</span>
+			</a>
+		</nav>
+		<div class="form">
+			<form action="submit.html" id="step1" novalidate>
+				<p>
+					<label for="name">真实姓名</label>
+					<input type="text" name="name" id="name" placeholder="请填写您本人的真实姓名" required='不能为空'>
+				</p>
+				<p>
+					<label for="cardId">身份证号</label><input type="text" name="cardId" id="cardId" placeholder="请填写您本人身份证号" required='不能为空'>
+				</p>
+				<p>
+					<label for="card">社保卡号</label><input type="text" name="card"  id="card"placeholder="社保卡条形码下方的12位编号" required='不能为空'>
+				</p>
+				<p>
+					<label for="phone">手机号码</label><input type="text" name="phone" id="phone"placeholder="请填写本人的手机号" required='不能为空'>
+				</p>
+				<div class="form-item item-line change">             
+				    <div class="pc-box">
+				    	<label for="education">最高学历</label>                     
+				        <input type="text" id="educationId" value="" placeholder="请选择">
+				    </div>          
+				</div>
+				<div class="form-item item-line change">             
+				    <div class="pc-box">
+				    	<label for="salary">税后月薪</label>                     
+				        <input type="text" id="salaryId" value="" placeholder="请选择">
+				    </div>             
+				</div>
+				<p>
+					<label for="company">单位全称</label><input type="text" name="company" id="company"  placeholder="请填写工作单位名称" required='不能为空'>
+				</p>
+				<p>
+					<label for="comPhone">单位座机</label><input type="text" name="comPhone" id="comPhone" placeholder="请填写工作单位座机号" required='不能为空'>
+				</p>
+				<p>
+					<label for="yes">近24个月内是否有逾期记录？</label>
+					<input type="radio" name="yes">有
+					<input type="radio" name="yes">无
+				</p>
+			</form>
+			<div class="tip">
+				<p>您的联系方式将被严格保密</p>
+			</div>
+		</div>
+		<div class="button">
+			<button class="apply" form="step1" id="next1">申请0首付购车</button>
+			<a href="javascript:;" class="phone"><i class="fa fa-phone"></i></a>
+		</div>	
+		
+	</div>
+	
+	<script src="lib/sea.js"></script>
+	<script>
+		
+		seajs.config({
+			alias:{
+				"swiper":"swiper/js/swiper.js",
+				"zepto":"zepto.min.js",
+				"iscroll":"iosselect-master/src/iscroll.js",
+				"iosSelect":"iosselect-master/src/iosSelect.js",
+				"form":"form.validate.js"
+			}
+		})
+
+		seajs.use("main");
+		
+	</script>
+</body>
+</html>

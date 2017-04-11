@@ -1,0 +1,139 @@
+
+	.banner{
+		width: 100%;
+		img{
+			width: 100%;
+		}
+	}
+	.nav{
+		width: 100%;
+		display: -webkit-box;
+		background: #F2F4F8;
+		border-bottom: #ddd solid 1px;
+		a{
+			display: block;
+			display: -webkit-box;
+			-webkit-box-orient:vertical;
+			-webkit-box-flex:1;
+			-webkit-box-align:center;
+			-webkit-box-pack:center;
+			padding: 0.2rem 0;
+			img{
+				display: block;
+				width: 60%;
+			}
+			span{
+				display: block;
+				color:#8B8C8D;
+				padding: 0.05rem 0;
+				font-size: 0.12rem;
+			}
+		}
+	}
+	.form{
+		background:@base-background;
+		form{
+			p{
+				border-bottom: #eee solid 1px;
+				padding: 0.16rem 0 0.18rem 0;
+				margin-left: 0.19rem;
+				font-size: 0.14rem;
+				display: -webkit-box;
+				color:#333333;
+				input{
+					border: none;
+					margin-left: 0.21rem;
+				}
+				input[type="radio"]{
+					margin-left: 0.1rem;
+					&:before{
+						content:" ";
+						display: block;
+						width:0.2rem;
+						height: 0.2rem;	
+						background: @base-background;
+						text-align: center;
+						margin-left: -0.05rem;
+						margin-top: -0.03rem;
+						border: #ddd solid 1px;
+						border-radius: 0.1rem;
+						border: #ddd solid 1px;
+						color:@base-background;
+					}
+					&:checked{
+						&:before{
+							content:"✔";
+							display: block;
+							width:0.2rem;
+							height: 0.2rem;	
+							background: #63C3F1;
+							color: @base-background;
+							text-align: center;
+							margin-left: -0.03rem;
+							margin-top: -0.03rem;
+							border: #ddd solid 1px;
+							border-radius: 0.1rem;
+							border: #ddd solid 1px;
+							color:@base-background;
+						
+						}
+					}
+				}
+				.tip{
+					color: red;
+				}
+			}
+
+			.change{
+				border-bottom: #eee solid 1px;
+				padding: 0.16rem 0 0.18rem 0;
+				margin-left: 0.19rem;
+				font-size: 0.14rem;
+				display: -webkit-box;
+				color:#333333;
+				input{
+					border: none;
+					margin-left: 0.21rem;
+				}
+			}
+		}
+			
+		.tip{
+			width: 100%;
+			p{
+				font-size: 0.12rem;
+				float: right;
+				margin-right:0.23rem;
+				padding: 0.1rem 0;
+				color: #666;
+			}
+		}
+		
+	}
+
+	.button{
+		width: 100%;
+		display: -webkit-box;
+		a{
+			display: block;
+			color: @base-background;
+			font-size: 0.18rem;
+		}
+		.apply{
+			display: block;
+			color: @base-background;
+			font-size: 0.18rem;
+			text-align: center;
+			border: none;
+			width: 80%;
+			padding: 0.18rem 0;
+			background: @base-color1;
+		}
+		.phone{
+			text-align: center;
+			width: 20%;
+			padding: 0.18rem 0;
+			background: @base-color2;
+		}
+	}
+

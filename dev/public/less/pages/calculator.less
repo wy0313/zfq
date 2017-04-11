@@ -1,0 +1,124 @@
+.calculator{
+	width: 100%;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left:0;
+	right:0;
+	background: @base-background;
+	padding: 0 0.2rem;
+	>p{
+		margin: 0.2rem;
+		display: -webkit-box;
+		b{
+			display: block;
+			width: 30%;
+			font-weight: normal;
+		}
+		i{
+			font-style: normal;
+		}
+		span{
+			display: block;
+			border-bottom: #333 solid 1px;
+			margin-left: 0.1rem;
+			width: 20%;
+			i{
+				font-style: normal;
+			}
+			&.none{
+				border:none;
+			}
+			input{
+				border: none;
+				width: 30px;
+			}
+		}
+	}
+	a{
+		display: block;
+		width: 100%;
+		padding: 0.1rem;
+		text-align: center;
+		background: @base-color1;
+		color: @base-background;
+		margin: 0.2rem 0;
+	}
+	input[type="radio"]{
+		margin-left: 0.1rem;
+		&:before{
+			content:" ";
+			display: block;
+			width:0.2rem;
+			height: 0.2rem;	
+			background: @base-background;
+			text-align: center;
+			margin-left: -0.05rem;
+			margin-top: -0.03rem;
+			border: #ddd solid 1px;
+			border-radius: 0.1rem;
+			border: #ddd solid 1px;
+			color:@base-background;
+		}
+		&:checked{
+			&:before{
+				content:"✔";
+				display: block;
+				width:0.2rem;
+				height: 0.2rem;	
+				background: #63C3F1;
+				color: @base-background;
+				text-align: center;
+				margin-left: -0.03rem;
+				margin-top: -0.03rem;
+				border: #ddd solid 1px;
+				border-radius: 0.1rem;
+				border: #ddd solid 1px;
+				color:@base-background;
+			}
+		}
+	}
+	.results{
+		width: 100%;
+		padding: 0.19rem;
+		border: #ddd solid 1px;
+		position: relative;
+		.res{
+			width: 30%;
+			background: @base-background;
+			position: absolute;
+			top:-5%;
+			left:50%;
+			color: #989898;
+			text-align: center;
+			margin-left: -15%;
+		}
+		p{
+			margin-bottom:0.1rem; 
+			display: -webkit-box;
+			span{
+				display: block;
+				width: 60%;
+			}
+			em{
+				display: block;
+				width: 10%;
+				color: #989898;
+			}
+			b{
+				display: block;
+				width: 30%;
+				text-align: right;
+				font-weight: normal;
+				i{
+					color: @base-color1;
+					font-style: normal;
+				}
+			}
+			&.count{
+				border-top: #ddd solid 1px;
+				padding-top:0.1rem; 
+			}
+		}
+	}
+}

@@ -1,0 +1,546 @@
+html {
+  font-size: 100px;
+}
+body * {
+  font-size: 0.14rem;
+}
+html {
+  font-size: 100px;
+  background: #F2F4F8;
+}
+body * {
+  font-size: 0.14rem;
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 110px;
+  }
+}
+.wrap {
+  width: 100%;
+}
+.wrap h2 {
+  font-size: 0.22rem;
+  font-weight: 500;
+  text-align: center;
+}
+.banner {
+  width: 100%;
+}
+.banner img {
+  width: 100%;
+}
+.nav {
+  width: 100%;
+  display: -webkit-box;
+  background: #F2F4F8;
+  border-bottom: #ddd solid 1px;
+}
+.nav a {
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 1;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  padding: 0.2rem 0;
+}
+.nav a img {
+  display: block;
+  width: 60%;
+}
+.nav a span {
+  display: block;
+  color: #8B8C8D;
+  padding: 0.05rem 0;
+  font-size: 0.12rem;
+}
+.form {
+  background: #fff;
+}
+.form form p {
+  border-bottom: #eee solid 1px;
+  padding: 0.16rem 0 0.18rem 0;
+  margin-left: 0.19rem;
+  font-size: 0.14rem;
+  display: -webkit-box;
+  color: #333333;
+}
+.form form p input {
+  border: none;
+  margin-left: 0.21rem;
+}
+.form form p input[type="radio"] {
+  margin-left: 0.1rem;
+}
+.form form p input[type="radio"]:before {
+  content: " ";
+  display: block;
+  width: 0.2rem;
+  height: 0.2rem;
+  background: #fff;
+  text-align: center;
+  margin-left: -0.05rem;
+  margin-top: -0.03rem;
+  border-radius: 0.1rem;
+  border: #ddd solid 1px;
+  color: #fff;
+}
+.form form p input[type="radio"]:checked:before {
+  content: "✔";
+  display: block;
+  width: 0.2rem;
+  height: 0.2rem;
+  background: #63C3F1;
+  text-align: center;
+  margin-left: -0.03rem;
+  margin-top: -0.03rem;
+  border-radius: 0.1rem;
+  border: #ddd solid 1px;
+  color: #fff;
+}
+.form form p .tip {
+  color: red;
+}
+.form form .change {
+  border-bottom: #eee solid 1px;
+  padding: 0.16rem 0 0.18rem 0;
+  margin-left: 0.19rem;
+  font-size: 0.14rem;
+  display: -webkit-box;
+  color: #333333;
+}
+.form form .change input {
+  border: none;
+  margin-left: 0.21rem;
+}
+.form .tip {
+  width: 100%;
+}
+.form .tip p {
+  font-size: 0.12rem;
+  float: right;
+  margin-right: 0.23rem;
+  padding: 0.1rem 0;
+  color: #666;
+}
+.button {
+  width: 100%;
+  display: -webkit-box;
+}
+.button a {
+  display: block;
+  color: #fff;
+  font-size: 0.18rem;
+}
+.button .apply {
+  display: block;
+  color: #fff;
+  font-size: 0.18rem;
+  text-align: center;
+  border: none;
+  width: 80%;
+  padding: 0.18rem 0;
+  background: #FF6600;
+}
+.button .phone {
+  text-align: center;
+  width: 20%;
+  padding: 0.18rem 0;
+  background: #4ACD30;
+}
+.data {
+  width: 100%;
+  display: -webkit-box;
+  background: #fff;
+}
+.data div {
+  -webkit-box-flex: 1;
+}
+.data .data-left {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  border-right: #ddd solid 1px;
+}
+.data .data-left a {
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  padding: 0.3rem 0;
+}
+.data .data-left a img {
+  display: block;
+  width: 60%;
+}
+.data .data-left a span {
+  display: block;
+  color: #000;
+  padding: 0.05rem;
+}
+.data .data-left :first-child {
+  border-bottom: #ddd solid 1px;
+}
+.data .data-right {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.data .data-right a {
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  padding: 0.6rem 0;
+}
+.data .data-right a img {
+  display: block;
+  width: 70%;
+}
+.data .data-right a span {
+  display: block;
+  color: #000;
+  padding: 0.05rem;
+}
+.submit,
+.examine,
+.pay,
+.err {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+}
+.submit img,
+.examine img,
+.pay img,
+.err img {
+  display: block;
+  width: 20%;
+  margin-top: 0.3rem;
+}
+.submit h2,
+.examine h2,
+.pay h2,
+.err h2 {
+  margin: 0.12rem 0;
+}
+.submit .wait,
+.examine .wait,
+.pay .wait,
+.err .wait {
+  font-size: 0.14rem;
+  color: #858585;
+  text-align: center;
+}
+.submit .wait b,
+.examine .wait b,
+.pay .wait b,
+.err .wait b {
+  font-weight: normal;
+}
+.submit .wait span,
+.examine .wait span,
+.pay .wait span,
+.err .wait span {
+  color: #FF6600;
+  line-height: 0.24rem;
+}
+.submit .wait i,
+.examine .wait i,
+.pay .wait i,
+.err .wait i {
+  display: block;
+  font-style: normal;
+}
+.submit a,
+.examine a,
+.pay a,
+.err a {
+  display: block;
+  width: 80%;
+  padding: 0.12rem 0;
+  text-align: center;
+  background: #FF6600;
+  color: #fff;
+  font-size: 0.16rem;
+  margin: 0.27rem 0;
+}
+.submit a.contact,
+.examine a.contact,
+.pay a.contact,
+.err a.contact {
+  background: #4ACD30;
+}
+.submit a i,
+.examine a i,
+.pay a i,
+.err a i {
+  color: #fff;
+  font-size: 0.2rem;
+  margin-right: 0.08rem;
+}
+.submit .explain,
+.examine .explain,
+.pay .explain,
+.err .explain {
+  width: 80%;
+  color: #919191;
+  line-height: 0.24rem;
+}
+.submit .explain h4,
+.examine .explain h4,
+.pay .explain h4,
+.err .explain h4 {
+  font-size: 0.1rem;
+}
+.submit .explain ul li,
+.examine .explain ul li,
+.pay .explain ul li,
+.err .explain ul li {
+  font-size: 0.1rem;
+  list-style: disc;
+  margin-left: 0.12rem;
+}
+.condition {
+  width: 100%;
+}
+.condition div {
+  width: 100%;
+  height: 0.69rem;
+  margin-top: 0.1rem;
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-align: center;
+}
+.condition div span {
+  position: absolute;
+  top: -20%;
+  left: -7%;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  line-height: 1rem;
+  color: #fff;
+  font-size: 0.4rem;
+}
+.condition div p {
+  margin: 0 5% 0 26%;
+  font-size: 0.12rem;
+  line-height: 0.20rem;
+}
+.condition div i {
+  position: absolute;
+  height: 0.05rem;
+  width: 90%;
+  left: 0;
+  bottom: 0;
+}
+.condition div .blue {
+  background: #7ECEF4;
+}
+.condition div .green {
+  background: #CCE198;
+}
+.condition div .ash {
+  background: #959595;
+}
+.condition div .red {
+  background: #EC6941;
+}
+.calculator {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 0 0.2rem;
+}
+.calculator > p {
+  margin: 0.2rem;
+  display: -webkit-box;
+}
+.calculator > p b {
+  display: block;
+  width: 30%;
+  font-weight: normal;
+}
+.calculator > p i {
+  font-style: normal;
+}
+.calculator > p span {
+  display: block;
+  border-bottom: #333 solid 1px;
+  margin-left: 0.1rem;
+  width: 20%;
+}
+.calculator > p span i {
+  font-style: normal;
+}
+.calculator > p span.none {
+  border: none;
+}
+.calculator > p span input {
+  border: none;
+  width: 30px;
+}
+.calculator a {
+  display: block;
+  width: 100%;
+  padding: 0.1rem;
+  text-align: center;
+  background: #FF6600;
+  color: #fff;
+  margin: 0.2rem 0;
+}
+.calculator input[type="radio"] {
+  margin-left: 0.1rem;
+}
+.calculator input[type="radio"]:before {
+  content: " ";
+  display: block;
+  width: 0.2rem;
+  height: 0.2rem;
+  background: #fff;
+  text-align: center;
+  margin-left: -0.05rem;
+  margin-top: -0.03rem;
+  border-radius: 0.1rem;
+  border: #ddd solid 1px;
+  color: #fff;
+}
+.calculator input[type="radio"]:checked:before {
+  content: "✔";
+  display: block;
+  width: 0.2rem;
+  height: 0.2rem;
+  background: #63C3F1;
+  text-align: center;
+  margin-left: -0.03rem;
+  margin-top: -0.03rem;
+  border-radius: 0.1rem;
+  border: #ddd solid 1px;
+  color: #fff;
+}
+.calculator .results {
+  width: 100%;
+  padding: 0.19rem;
+  border: #ddd solid 1px;
+  position: relative;
+}
+.calculator .results .res {
+  width: 30%;
+  background: #fff;
+  position: absolute;
+  top: -5%;
+  left: 50%;
+  color: #989898;
+  text-align: center;
+  margin-left: -15%;
+}
+.calculator .results p {
+  margin-bottom: 0.1rem;
+  display: -webkit-box;
+}
+.calculator .results p span {
+  display: block;
+  width: 60%;
+}
+.calculator .results p em {
+  display: block;
+  width: 10%;
+  color: #989898;
+}
+.calculator .results p b {
+  display: block;
+  width: 30%;
+  text-align: right;
+  font-weight: normal;
+}
+.calculator .results p b i {
+  color: #FF6600;
+  font-style: normal;
+}
+.calculator .results p.count {
+  border-top: #ddd solid 1px;
+  padding-top: 0.1rem;
+}
+.process {
+  background: #FAE24C;
+  width: 90%;
+  position: absolute;
+  top: 2%;
+  bottom: 2%;
+  left: 4%;
+  right: 4%;
+}
+.process .road {
+  width: 80%;
+  height: 70%;
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: 15%;
+  top: 15%;
+}
+.process .step {
+  width: 100%;
+}
+.process .step img {
+  width: 50%;
+  position: absolute;
+  z-index: 100;
+}
+.process .step img.phone {
+  right: -61%;
+  top: 10%;
+  -webkit-animation: translate 1s linear forwards;
+}
+.process .step img.band {
+  right: -57%;
+  top: 31%;
+  -webkit-animation: translate 1s linear 2s forwards;
+}
+.process .step img.interview {
+  left: -75%;
+  top: 44%;
+  -webkit-animation: translate2 1s linear 3s forwards;
+}
+.process .step img.loan {
+  right: -68%;
+  top: 59%;
+  -webkit-animation: translate 1s linear 4s forwards;
+}
+.process .step img.car {
+  left: -55%;
+  top: 78%;
+  -webkit-animation: translate2 1s linear 5s forwards;
+}
+@-webkit-keyframes translate {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-136%, 0);
+  }
+}
+@-webkit-keyframes translate2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(169%, 0);
+  }
+}

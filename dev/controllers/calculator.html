@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>分期计算器</title>
+	<link rel="stylesheet" href="../public/css/reset.css">
+	<link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="calculator">
+			<p class="price">
+				<b>车价：</b>
+				<span><input type="text" value="10" class="price">万</span></p>
+			<p class="time">
+				<b>贷款时间：</b>
+				<input type="radio" name="time"><i>24个月</i>
+				<input type="radio" name="time" checked><i>36个月</i>
+			</p>
+			<p class="rate">
+				<b>年化利率：</b>
+				<span class="none">5.5%</span>
+			</p>
+			<a href="javascript:;" class="reckon">计算</a>
+			<div class="results">
+				<span class="res">计算结果</span>
+				<p><span>首付</span><em></em><b><i>0</i>元</b></p>
+				<p class="payments"><span>月供</span><em>+</em><b><i>3236.11</i>元</b></p>
+				<p id="month"><span></span><em>*</em><b>36月</b></p>
+				<p class="proc"><span>一次性贷款手续费</span><em>+</em><b><i>1500</i>元</b></p>
+				<p class="count"><span>总共花费</span><em></em><b><i>11.8万</i>元</b></p>
+			</div>
+		</div>
+	</div>
+
+	<script src="../lib/sea.js"></script>
+	<script>
+		seajs.config({
+			alias:{
+				"zepto":"zepto.min.js"
+			}
+		})
+
+		seajs.use("calculation");
+		
+	</script>
+</body>
+</html>
